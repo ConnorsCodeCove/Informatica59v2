@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatica59</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css"
+        rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header style="background:#0b5394;">
+        <div class="container">
+            <nav class="navbar navbar-expand-md border-bottom py-3">
+                <div class="container-fluid d-flex justify-content-between"> <!-- This keeps the logo on the left -->
+                    <a class="navbar-brand" href="#" style="padding: 0;">
+                        <img src="./assets/colorlogobanner.svg" id="logoimg">
+                    </a>
+                    <button class="navbar-toggler custom-toggler align-items-center p-2" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03"
+                        aria-expanded="false" aria-label="Toggle navigation" style="height: 35px; width: 40px;">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarsExample03">
+                    <!-- Justify content end for right alignment -->
+                    <ul class="navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active homenav" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link homenav" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link homenav dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                                aria-expanded="false">Services</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link homenav standout" href="#" style="color: #0b5394 !important">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <section class="px-3 px-md-5 pt-5" id="hero">
+        <div class="hero-overlay" style="z-index:1;"></div>
+        <div class="container page-padding" style="position:relative; z-index:2;">
+            <div class="row pe-lg-0 pt-lg-5 align-items-center rounded-3 shadow-md appear">
+                <div class="col-lg-7">
+                    <h1 class="text-white">When Every <span id="highlight-byte">Byte</span> Matters.</h1>
+                    <p class="lead text-white">The complete IT managed service solution for growing businesses. Advanced
+                        security,
+                        scalable
+                        infrastructure, and unmatched support.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3" style="width: 250px;">
+                        <button class="learn-more">
+                            <span class="circle" aria-hidden="true">
+                                <span class="icon arrow"></span>
+                            </span>
+                            <span class="button-text">Get a free consultation!</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-md">
+                    <img src="" alt="" width="720" style="opacity:0.05;">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="first_section">
+        <div class="container appear page-padding d-flex flex-column justify-content-center align-items-center">
+            <div class="row mb-5" style="max-width:1000px;">
+                <h2 class="text-center mb-5 mb-md-5 text-white" style="text-shadow: 1px 1px black;">Concentrate on your <span style="color: #c9af50;">success</span>; we'll take
+                    care of the <span style="color:#2e92ea;">tech</span>.</h2>
+                <p class="text-left text-md-center lead text-white" style="text-shadow: 1px 0px #0b5394">At
+                    <span style="font-weight:500;color:#d9c479; animation: soft-glow 4s infinite;">Informatica59</span>, we deliver tailored solutions that empower your organization to
+                    thrive. We take a concierge-like approach as your Managed Service Provider (MSP).
+                    With our
+                    support, you can reduce costs and eliminate the need for in-house IT experts, allowing you to
+                    concentrate on what
+                    matters most—growing your business.</p>
+            </div>
+            <div class="row px-3">
+                <div class="card shadow-md rounded-4 appear h-100"
+                    style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1); padding:0;">
+                    <div class="card-body rounded-4 p-3 p-md-5"
+                        style="background: linear-gradient(145deg, #0a4c7a, #094579, #094664, #073a67); overflow: hidden; padding: 0;">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="container pb-1">
+                                    <h3 class="text-white pb-3 p-md-3">From Cloud to On-Site IT Solutions</h3>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-auto"><svg width="25" height="24" viewBox="0 0 25 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.28354 12.0191L11.2903 14.0237C12.2554 12.336 13.5912 10.8895 15.1967 9.7931L15.2835 9.73381M11.0338 2.36804L5.64625 4.31356C4.49706 4.72854 3.71436 5.799 3.6674 7.01992L3.54014 10.3285C3.38246 14.4282 5.51943 18.2749 9.08352 20.3071L10.6042 21.1741C11.505 21.6878 12.6072 21.6998 13.519 21.2059L15.0076 20.3995C18.825 18.3318 21.0691 14.2123 20.7361 9.88366L20.5092 6.93316C20.4187 5.7566 19.6468 4.74238 18.5369 4.34159L13.0717 2.36804C12.4132 2.13025 11.6923 2.13025 11.0338 2.36804Z"
+                                                        stroke="#F8FFFA" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </svg></div>
+    
+                                            <div class="col">
+                                                <h6 class="text-white">A unified suite of enterprise-grade security
+                                                    solutions</h6>
+                                                <p class="blue_subtle">Benefit from the same cybersecurity that Fortune 500
+                                                    companies and other
+                                                    enterprises rely on.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-auto"><svg width="25" height="24" viewBox="0 0 25 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.28354 12.0191L11.2903 14.0237C12.2554 12.336 13.5912 10.8895 15.1967 9.7931L15.2835 9.73381M11.0338 2.36804L5.64625 4.31356C4.49706 4.72854 3.71436 5.799 3.6674 7.01992L3.54014 10.3285C3.38246 14.4282 5.51943 18.2749 9.08352 20.3071L10.6042 21.1741C11.505 21.6878 12.6072 21.6998 13.519 21.2059L15.0076 20.3995C18.825 18.3318 21.0691 14.2123 20.7361 9.88366L20.5092 6.93316C20.4187 5.7566 19.6468 4.74238 18.5369 4.34159L13.0717 2.36804C12.4132 2.13025 11.6923 2.13025 11.0338 2.36804Z"
+                                                        stroke="#F8FFFA" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </svg></div>
+    
+                                            <div class="col">
+                                                <h6 class="text-white">Designed for small and medium-sized businesses</h6>
+                                                <p class="blue_subtle">SMB-friendly pricing and onboarding, no expert
+                                                    know-how required, and
+                                                    fully managed for you.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-auto"><svg width="25" height="24" viewBox="0 0 25 24"
+                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path
+                                                        d="M9.28354 12.0191L11.2903 14.0237C12.2554 12.336 13.5912 10.8895 15.1967 9.7931L15.2835 9.73381M11.0338 2.36804L5.64625 4.31356C4.49706 4.72854 3.71436 5.799 3.6674 7.01992L3.54014 10.3285C3.38246 14.4282 5.51943 18.2749 9.08352 20.3071L10.6042 21.1741C11.505 21.6878 12.6072 21.6998 13.519 21.2059L15.0076 20.3995C18.825 18.3318 21.0691 14.2123 20.7361 9.88366L20.5092 6.93316C20.4187 5.7566 19.6468 4.74238 18.5369 4.34159L13.0717 2.36804C12.4132 2.13025 11.6923 2.13025 11.0338 2.36804Z"
+                                                        stroke="#F8FFFA" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </svg></div>
+    
+                                            <div class="col">
+                                                <h6 class="text-white">Simple pricing &amp; setup</h6>
+                                                <p class="blue_subtle">One subscription. One price. One partner.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="container d-flex justify-content-center rounded-3"
+                                    style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                                    <img src="./assets/CPU (3).svg" class="img-fluid rounded-3"
+                                        style="opacity:0.8; height:450px; width:450px;">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    </section>
+    <section class="position-relative overflow-hidden px-3 px-md-5">
+        <div class="container py-5 page-padding">
+          <div class="row">
+            <!-- About content START -->
+            <div class="col-lg-5 appear">
+              <h2 class="pb-4 border-bottom">Defining the concierge IT
+                experience</h3>
+              <p class="lead">We're a Houston-focused, family-owned firm specializing in IT administration for
+                small businesses with a results-driven focus. We have decades of combined experience in
+                consulting and supporting businesses for sustained growth.</p>
+              <!-- List -->
+              <ul class="list-group list-group-borderless mb-4">
+                <li class="list-group-item heading-color d-flex mb-0"><i
+                    class="bi bi-patch-check-fill text-primary me-2"></i>Emphasis on ROI-driven solutions</li>
+                <li class="list-group-item heading-color d-flex mb-0"><i
+                    class="bi bi-patch-check-fill text-primary me-2"></i>Expert team with diverse skill</li>
+                <li class="list-group-item heading-color d-flex mb-0"><i
+                    class="bi bi-patch-check-fill text-primary me-2"></i>Proven track record of delivering results</li>
+              </ul>
+            </div>
+            <!-- About content END -->
+            <!-- About image START -->
+            <div class="col-lg-7 mt-5 mt-lg-0">
+              <div class="row">
+                <div class="col-sm-6">
+                  <!-- About image -->
+                  <img src="assets/02.jpg" class="rounded img-fluid appear" alt="about-img">
+                  <div class="d-block d-md-none mt-4"></div>
+                </div>
+      
+                <div class="col-sm-6">
+                  <!-- Skill set -->
+                  <div class="row mb-4">
+                    <div class="col-6 mb-md-4 mb-sm-0">
+                      <div class="bg-dark text-white rounded text-center p-3 appear h-100">
+                        <h4><span class="text-white" id="number2" style="line-height:1;">20</span><span class="text-white">+</span></h4>
+                        <h5 class="mb-0 fw-semibold" style="line-height:1;">Years expertise</h5>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="rounded text-center p-3 appear h-100" style=" background:#c9af50;">
+                        <h4><span id="number1" style="color:#0966b8;">100</span><span
+                          style="color:#0966b8;">+</span></h4>
+                        <h5 class="mb-0 fw-semibold" style="color:#0966b8; line-height:1;">Project wins</h5>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <!-- About image -->
+                  <img src="assets/pexels-tracehudson-10893475.jpg" class="rounded-3 img-fluid appear" alt="about-img-2">
+                </div>
+              </div> <!-- Row END -->
+            </div>
+            <!-- About image END -->
+      
+      
+          </div>
+        </div>
+    </section>
+    <section class="px-3 px-md-5">
+        <div class="container page-padding">
+          <div class="row text-center justify-content-between">
+            <h2 class="mb-md-4">Fast-track your Success</h2>
+          </div>
+          <div class="row mb-3 mt-md-4 justify-content-center g-4">
+            <div class="col-lg-7">
+              <div class="card shadow-md rounded-4 appear h-100"
+                style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+                <div class="card-body rounded-4 p-3 p-md-4"
+                  style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+                  <div class="container pt-3 pb-1 px-3">
+                    <h3 class="pb-2">IT Should Work for You</h3>
+                    <p class="lead">Your IT should do more than just support your business—it should drive it forward. Let us do what our competition doesn't: turn your IT into a
+                        powerful asset that propels your business.</p>
+                        <br>
+                  </div>
+                  <div class="container d-flex justify-content-center rounded-3"
+                    style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="./assets/undraw_read_notes_gqmq.svg" class="img-fluid rounded-3"
+                      style="height:325px; width:350px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <div class="card shadow-md rounded-4 appear h-100"
+                style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+                <div class="card-body rounded-4 p-3 p-md-4"
+                  style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+                  <div class="container d-flex justify-content-center rounded-3"
+                    style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);">
+                    <img src="./assets/undraw_cloud_hosting_7xb1.svg" class="img-fluid rounded-3"
+                      style="height:251px; width:250px;">
+                  </div>
+                  <div class="container pt-3 pb-1">
+                    <h3 class="pb-2">Making Cloud Simple</h3>
+                    <p class="lead">We handle cloud migration, configuration, and management, ensuring you leverage the full power of
+                        the cloud—without the hassle. Focus on what you do best while we optimize your cloud environment for
+                        scalability and performance.</p>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-3 justify-content-center g-4">
+            <div class="col-lg-4">
+              <div class="card shadow-md rounded-4 appear h-100"
+                style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+                <div class="card-body rounded-4 p-3 p-md-4"
+                  style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+                  <div class="container d-flex justify-content-center rounded-3 mb-3"
+                    style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.07);">
+                    <img src="./assets/undraw_secure_server_re_8wsq.svg" class="img-fluid rounded-3"
+                      style="height:251px; width:250px;">
+                  </div>
+                  <div class="container pt-3 pb-1">
+                    <h3 class="pb-2">Security and Compliance</h3>
+                    <p class="lead">Navigating essential standards like HIPAA is crucial for your business. We provide robust solutions
+                        to safeguard sensitive data and ensure compliance, empowering you to build trust and confidence with
+                        your clients.</p>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <div class="card shadow-md rounded-4 appear h-100"
+                style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+                <div class="card-body rounded-4 p-3 p-md-4"
+                  style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+                  <div class="container pt-3 pb-1 px-3">
+                    <h3 class="pb-2">Empower Your Decision Making</h3>
+                    <p class="lead">Transform how you manage your operations and make informed choices. Our expert IT support enables
+                        you to leverage technology effectively, providing clarity and streamlining processes. With the right
+                        tools in place, you can enhance efficiency and drive your business forward with confidence.</p>
+                    </ul>
+                  </div>
+                  <div class="container d-flex justify-content-center rounded-3"
+                    style="box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.07);">
+                    <img src="./assets/undraw_control_panel_re_y3ar.svg" class="img-fluid rounded-3"
+                      style="height:325px; width:350px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+        </div>
+    </section>
+    <section class="px-3 px-md-5">
+        <div class="container col p-3 p-md-5 page-padding appear">
+          <h2 class="text-center pb-1" style="font-weight: bold;">How We Do Business</h2>
+          <p class="pb-3 text-center lead" style="max-width: 1000px; margin: 0 auto;">
+            At our firm, client success is not just a goal; it's our unwavering focus. We do business simply and fairly with no hidden fees or material markups. Elevate your business with a consulting partner that not only understands your needs but goes above and beyond to ensure your success.
+          </p>
+          <div class="accordion accordion-flush p-md-5" id="accordionFlushExample" style="border-radius: 12px; box-shadow: 0 8px 12px rgba(0, 0, 0, 0.01); border: 0px solid #e1e7ec;">
+            <div class="accordion-item" style="margin: 15px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="font-size: 1.2rem; background-color: #f8f9fa;">
+                  How do I get started?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-black">
+                  Getting started is easy. Simply reach out to us through our contact page and our team will guide you through the process. We will coordinate a time with you to visit your business, gather information, and produce an initial estimate based on our findings.
+                </div>
+              </div>
+            </div>
+        
+            <div class="accordion-item" style="margin: 15px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="font-size: 1.2rem; background-color: #f8f9fa;">
+                  How much do you charge?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-black">
+                  This depends on if we're discussing project work or managed services. For project work, our proposals are based on time and materials. For managed services, the pricing plan is malleable to your needs, but it is most commonly a combination of retainer and labor hours spent during the month.
+                </div>
+              </div>
+            </div>
+        
+            <div class="accordion-item" style="margin: 15px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="font-size: 1.2rem; background-color: #f8f9fa;">
+                  Is there a minimum monthly retainer?
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-black">
+                  Yes. We establish a retainer based on your business complexity and number of devices as a baseline requirement of us to properly maintain your IT. This retainer covers consulting time or advice you may seek of us, so you will not have to be worried about being billed extra for time.
+                </div>
+                <div class="accordion-body text-black">
+                  For special one-time projects, we will provide a separate estimate that covers it as a standalone item.
+                </div>
+              </div>
+            </div>
+        
+            <div class="accordion-item" style="margin: 15px 0; border: 1px solid #dee2e6; border-radius: 8px; overflow: hidden; background-color: #ffffff; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);">
+              <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour" style="font-size: 1.2rem; background-color: #f8f9fa;">
+                  Do I have to sign a contract with you?
+                </button>
+              </h2>
+              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body text-black">
+                  Not if you don't want to. We've designed our process to be hassle-free and collaborative.
+                </div>
+                <div class="accordion-body text-black">
+                  This does not apply to situations where regulations require a contract, such as a HIPAA covered entity. In this type of situation, a business associate agreement is required, but the requirement of a written commercial contract is negotiable.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+    </section>
+    <section id="last_section">
+      <div class="container page-padding col px-5">
+        <h2 class="text-center pb-1" style="font-weight: bold;">The Path to Success</h2>
+        <p class="pb-3 text-center lead mb-md-3 md-5" style="max-width: 1000px; margin: 0 auto;">
+        </p>
+          <div class="row mb-2 mb-md-4">
+            <div class="card shadow-md rounded-5"
+              style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+              <div class="card-body rounded-5 p-3 p-md-5 row"
+                style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+                <div class="container pt-3 pb-1 ps-4 pe-5 col-lg-7">
+                  <h6 class="subtle pb-3">Step 1</h6>
+                  <h3 class="pb-2">Initial Consultation</h3>
+                  <p class="lead">Understand your business, goals, and current IT setup. Discuss pain points, challenges, and opportunities. Determine how our services can address your needs.</p>
+                  <br>
+                </div>
+                <div
+                  class="container position-relative col-lg-5 d-flex justify-content-center rounded-3 appear image-container">
+                  <div class="card-overlay"></div>
+                  <img src="./assets/pexels-olia-danilevich-5313361.jpg" class="img-fluid rounded-3">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2 mb-md-4">
+            <div class="card shadow-md rounded-5 appear h-100"
+              style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+              <div class="card-body rounded-5 p-3 p-md-5 row"
+                style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+    
+                <div class="container pt-3 pb-1 ps-4 pe-5 col-lg-7">
+                  <h6 class="subtle pb-3">Step 2</h6>
+                  <h3 class="pb-2">IT Assessment</h3>
+                  <p class="lead">Evaluate your entire IT environment. Review hardware, software, network, and security. Identify inefficiencies, risk, and areas for improvement.</p>
+                  <br>
+                </div>
+                <div
+                  class="container position-relative col-lg-5 d-flex justify-content-center rounded-3 appear image-container">
+                  <div class="card-overlay"></div>
+                  <img src="./assets/pexels-olia-danilevich-5313361.jpg" class="img-fluid rounded-3">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2 mb-md-4">
+            <div class="card shadow-md rounded-5 appear h-100"
+              style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+              <div class="card-body rounded-5 p-3 p-md-5 row"
+                style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+    
+                <div class="container pt-3 pb-1 ps-4 pe-5 col-lg-7">
+                  <h6 class="subtle pb-3">Step 3</h6>
+                  <h3 class="pb-2">Tailored Proposal</h3>
+                  <p class="lead">We'll design an IT solution for your business. Align proposed solutions with your objectives. Review pricing. Prepare for Onboarding.</p>
+                  <br>
+                </div>
+                <div
+                  class="container position-relative col-lg-5 d-flex justify-content-center rounded-3 appear image-container">
+                  <div class="card-overlay"></div>
+                  <img src="./assets/pexels-olia-danilevich-5313361.jpg" class="img-fluid rounded-3">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2 mb-md-4">
+            <div class="card shadow-md rounded-5 appear h-100"
+              style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+              <div class="card-body rounded-5 p-3 p-md-5 row"
+                style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+    
+                <div class="container pt-3 pb-1 ps-4 pe-5 col-lg-7">
+                  <h6 class="subtle pb-3">Step 4</h6>
+                  <h3 class="pb-2">Onboarding</h3>
+                  <p class="lead">Seamless system transition. Implement new tools and processes with minimal disruption. Ensure smooth adoption and system stability.</p>
+                  <br>
+                </div>
+                <div
+                  class="container position-relative col-lg-5 d-flex justify-content-center rounded-3 appear image-container">
+                  <div class="card-overlay"></div>
+                  <img src="./assets/pexels-olia-danilevich-5313361.jpg" class="img-fluid rounded-3">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-2 mb-md-4">
+            <div class="card shadow-md rounded-5 appear h-100"
+              style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
+              <div class="card-body rounded-5 p-3 p-md-5 row"
+                style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+    
+                <div class="container pt-3 pb-1 ps-4 pe-5 col-lg-7">
+                  <h6 class="subtle pb-3">Step 5</h6>
+                  <h3 class="pb-2">Continuous Support and Improvement</h3>
+                  <p class="lead">Maintain performance and support growth. Provide ongoing support, monitoring, and regular reviews. Keep your IT infrastructure aligned with business needs.</p>
+                  <br>
+                </div>
+                <div
+                  class="container position-relative col-lg-5 d-flex justify-content-center rounded-3 appear image-container">
+                  <div class="card-overlay"></div>
+                  <img src="./assets/pexels-olia-danilevich-5313361.jpg" class="img-fluid rounded-3">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    </main>
+
+    <footer class="py-3" style="background:#0b5394">
+      <ul class="nav nav-pills justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link homenav active px-2">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link homenav px-2 text-white">Pricing</a></li>
+        <li class="nav-item"><a href="#" class="nav-link homenav px-2 text-white">FAQs</a></li>
+        <li class="nav-item"><a href="#" class="nav-link homenav standout px-2">Contact</a></li>
+      </ul>
+      <p class="text-center text-white">© 2024 Informatica LLC</p>
+    </footer>
+
+
+    <button id="backToTop" class="btn" style="display: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up"
+          viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M8 12.5a.5.5 0 0 1-.5-.5V3.707L3.354 8.354a.5.5 0 0 1-.708-.708l5-5a.5.5 0 0 1 .708 0l5 5a.5.5 0 0 1-.708.708L8.5 3.707V12a.5.5 0 0 1-.5.5z" />
+        </svg>
+      </button>
+
+    <script>
+        const backToTopButton = document.getElementById("backToTop");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                backToTopButton.style.display = "block";
+                backToTopButton.classList.remove('fade-out'); // Ensure it's visible
+            } else {
+                // Add fade-out class when near the top
+                backToTopButton.classList.add('fade-out');
+                setTimeout(() => {
+                    if (backToTopButton.classList.contains('fade-out')) {
+                        backToTopButton.style.display = "none"; // Hide after fading out
+                    }
+                }, 500); // Match this duration to the CSS transition time
+            }
+        };
+
+        backToTopButton.addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
+    <script>
+        // Function to check if an element is in the viewport
+        function isInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top < (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.bottom > 0 &&
+                rect.left < (window.innerWidth || document.documentElement.clientWidth) &&
+                rect.right > 0
+            );
+        }
+
+        // Function to add 'visible' class when appear element is in view with random delay
+        function handleScroll() {
+            const appearElements = document.querySelectorAll('.appear');
+            appearElements.forEach(appearElement => {
+                if (isInViewport(appearElement) && !appearElement.classList.contains('visible')) {
+                    // Generate a random delay between 200ms and 1000ms (adjust as needed)
+                    const randomDelay = Math.floor(Math.random() * (600 - 200 + 1)) + 50;
+
+                    setTimeout(() => {
+                        appearElement.classList.add('visible');
+                    }, randomDelay);
+                }
+            });
+        }
+
+        // Initial check
+        handleScroll();
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+    </script>
+      <script>
+        function scrollNumber(elementId, end, duration) {
+          let start = 0;
+          const incrementTime = duration / end; // Time per increment
+          const numberElement = document.getElementById(elementId);
+    
+          const interval = setInterval(() => {
+            start++;
+            numberElement.textContent = start;
+            numberElement.style.opacity = '1';
+    
+            if (start >= end) {
+              clearInterval(interval);
+            }
+          }, incrementTime);
+        }
+    
+        // Intersection Observer to trigger scrolling numbers
+        const options = {
+          root: null, // Use the viewport as the container
+          rootMargin: '0px',
+          threshold: 0.1 // Trigger when at least 10% of the element is visible
+        };
+    
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              // Trigger scrolling effect when the element is in view
+              if (entry.target.id === 'number1') {
+                scrollNumber('number1', 100, 2000); // Scroll from 0 to 100
+              } else if (entry.target.id === 'number2') {
+                scrollNumber('number2', 20, 800); // Scroll from 0 to 50
+              }
+              // Stop observing the element after it's been triggered
+              observer.unobserve(entry.target);
+            }
+          });
+        }, options);
+    
+        // Observe both number elements
+        observer.observe(document.getElementById('number1'));
+        observer.observe(document.getElementById('number2'));
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
