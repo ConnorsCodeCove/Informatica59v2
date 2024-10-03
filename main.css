@@ -58,9 +58,15 @@ body {
   
   /* Lead Paragraph (for introduction or highlights) */
   .lead {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
+  }
+
+  .cardbodytext {
+    font-size: 18px;
+    font-weight: 400;
+    line-height:1.5;
   }
   
   /* Small Text */
@@ -186,7 +192,7 @@ body {
     padding-top:0;
     position: relative;
     height: 100vh; /* Adjust height as needed */
-    background-image: url('assets/image01.webp'); /* Replace with your image path */
+    background-image: url('assets/image01_compressed.webp'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     opacity: 1; /* Lower opacity for the background image */
