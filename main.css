@@ -4,6 +4,7 @@
 
 /* Global Text Settings */
 body {
+    font-family: "Roboto", sans-serif;
     font-size: 16px; /* Base font size */
     line-height: 1.6; /* Comfortable line spacing */
     font-weight: 400; /* Default font weight */
