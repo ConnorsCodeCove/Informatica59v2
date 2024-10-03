@@ -341,6 +341,23 @@ button {
   border-radius: 0.375rem; /* Match the border radius with the image */
 }
 
+.img-rot {
+  transition: transform 0.4s ease;
+}
+
+.img-rot:hover {
+  transform: rotate(1deg);
+}
+
+.img-zoom {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Scale and shadow on hover */
+.img-zoom:hover {
+  transform: scale(1.01); /* Slightly enlarges the image */
+}
+
 .card-overlay {
   position: absolute;
   top: 0;
