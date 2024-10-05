@@ -89,6 +89,14 @@ body {
     margin-top:6px;
   }
   
+  .bluegradienttext {
+    background: radial-gradient(138.06% 1036.51% at 95.25% -2.54%, #4093ff 5.06%, #5e92fb 30.02%, #4D78EF 59.09%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+  }
+  
   /* Links */
   a {
     font-size: 16px;
@@ -198,7 +206,7 @@ body {
     background-position: center;
     opacity: 1; /* Lower opacity for the background image */
   }
-
+  
   #first_section {
     position: relative;
     padding-top:0px;
@@ -365,7 +373,8 @@ button {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(11, 83, 148, 0.3); /* Blue overlay with 30% opacity */
+  background: radial-gradient(138.06% 1036.51% at 95.25% -2.54%, #4093ff 5.06%, #5e92fb 30.02%, #4D78EF 59.09%);; /* Blue overlay with 30% opacity */
+  opacity: 0.3;
   z-index: 1;
 }
 
@@ -375,8 +384,6 @@ button {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   border-radius: inherit; /* Match the parent radius */
   padding: 4px; /* Creates space for the gradient effect */
   background: linear-gradient(
@@ -477,6 +484,55 @@ button {
     opacity: 1; /* Become visible */
     animation: slideIn 0.5s forwards; /* Slide-in animation */
   }
+
+
+/* FORM SUBMISSION HANDLING */
+
+.overlay-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 900;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+.overlay-form {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.7);
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 400px;
+  max-height: 90vh;
+  overflow-y: auto;
+  opacity: 0;
+  transition: opacity 4s ease-in-out, transform 10s ease-in-out;
+}
+.overlay-bg.show, .overlay-form.show {
+  display: block;
+  opacity: 1;
+}
+.overlay-form.show {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.show-form-btn {
+  position: relative;
+  cursor: pointer;
+}
+
+
+/* BREAKPOINT HANDLING */
+
 
   @media (max-width: 1200px) {
     /* Global Text Settings */
