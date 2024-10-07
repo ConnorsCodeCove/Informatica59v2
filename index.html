@@ -114,7 +114,7 @@
             <button type="button" id="closeFormBtn" class="btn" style="background:#0b549438;">Close</button>
           </div>
           <div>
-            <p class="text-left pt-2" style="font-size: 10px;">We need the information on this form to
+            <p class="text-lg-center text-left pt-2" style="font-size: 10px;">We need the information on this form to
               contact you. To know how we commit to protecting your privacy, please review our Privacy Policy.</p>
           </div>
         </form>
@@ -729,21 +729,24 @@
           <div class="col-lg-5 col-xl-4 ms-auto text-lg-end">
             <ul class="list-group list-group-borderless mb-0">
               <li class="list-group-item mb-0">
-                <a href="#" class="fw-normal">
-                  <i class="bi bi-headset me-1"></i> Call: +1 (713) 364 3754
+                <a href="tel:+17133643754" class="fw-normal phone-link">
+                  <i class="bi bi-headset me-1"></i> +1 (713) 364 3754
                 </a>
               </li>
               <li class="list-group-item fw-normal mb-0">
-                <i class="bi bi-clock me-1"></i> Time: 9am to 5pm (Sunday close)
+                <i class="bi bi-clock me-1"></i>
+                <span id="copyEmail" style="cursor: pointer; color: #0b5394; text-decoration: underline;">
+                  sales@informatica59.com
+                </span>
               </li>
               <li class="list-group-item mb-0">
-                <a href="#" class="fw-normal">
-                  <i class="bi bi-envelope me-1"></i> Email: sales@informatica59.com
+                <a class="fw-normal">
+                  <i class="bi bi-envelope me-1"></i> 8am to 5pm
                 </a>
               </li>
-            </ul>
+            </ul>            
           </div>
-        </div> <!-- Row END -->
+        </div>
       </div>
     </div>
   </section>
@@ -959,6 +962,41 @@
         }
       });
     });
+
+  </script>
+  <script>
+// Select the email text element
+const emailTextElement = document.getElementById("copyEmail");
+
+// Store the original email text
+const originalEmailText = emailTextElement.innerText;
+
+// Set up the event listener for click
+emailTextElement.addEventListener("click", function () {
+    // Copy the email text to clipboard
+    navigator.clipboard.writeText(originalEmailText).then(() => {
+        // Replace the email text with the copy feedback
+        emailTextElement.innerText = "Email copied to clipboard!";
+
+        // After 10 seconds, revert back to the original email text
+        setTimeout(() => {
+            emailTextElement.innerText = originalEmailText;
+        }, 10000); // 10000 milliseconds = 10 seconds
+    }).catch(err => {
+        console.error("Failed to copy text: ", err);
+    });
+});
+
+window.addEventListener("DOMContentLoaded", function() {
+  const phoneLink = document.querySelector(".phone-link");
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+  // If the device is not a mobile device, remove the tel: link
+  if (!isMobile) {
+    phoneLink.removeAttribute("href");
+  }
+});
+
 
   </script>
 </body>

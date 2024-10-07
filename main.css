@@ -646,6 +646,42 @@ button {
   font-size: 14px;
 }
 
+/* Tooltip styling */
+.tooltip-popup {
+  position: absolute;
+  background-color: #333; /* Background color of the tooltip */
+  color: #fff; /* Tooltip text color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap; /* Prevent text wrapping */
+  z-index: 1000; /* Ensure the tooltip is above other elements */
+  top: -30px; /* Position above the email text */
+  left: 0;
+  transform: translateX(-50%); /* Center the tooltip */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.2s ease-in-out; /* Smooth fade-in effect */
+}
+
+/* Tooltip arrow */
+.tooltip-popup::after {
+  content: "";
+  position: absolute;
+  bottom: -5px; /* Position the arrow below the tooltip */
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent; /* Triangle shape */
+}
+
+/* Show the tooltip */
+.tooltip-popup.show-tooltip {
+  opacity: 1; /* Make tooltip visible */
+}
+
+
+
 /* BREAKPOINT HANDLING */
 
 
