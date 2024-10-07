@@ -619,7 +619,7 @@ button {
   border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  max-height: 95vh;
+  max-height: 90vh;
   opacity: 0;
   transition: opacity 4s ease-in-out, transform 10s ease-in-out;
 }
@@ -812,7 +812,7 @@ button {
 
   @media (min-width: 375px) {
     .overlay-form {
-      max-width: 375px;
+      max-width: 350px;
     }
   }
 
