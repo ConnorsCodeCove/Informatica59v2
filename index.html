@@ -965,38 +965,61 @@
 
   </script>
   <script>
-// Select the email text element
-const emailTextElement = document.getElementById("copyEmail");
+document.addEventListener("DOMContentLoaded", function () {
+  // Define elements for phone number and email address
+  const phoneLink = document.querySelector("a[href^='tel:']");
+  const emailTextElement = document.getElementById("copyEmail");
 
-// Store the original email text
-const originalEmailText = emailTextElement.innerText;
-
-// Set up the event listener for click
-emailTextElement.addEventListener("click", function () {
-    // Copy the email text to clipboard
-    navigator.clipboard.writeText(originalEmailText).then(() => {
-        // Replace the email text with the copy feedback
-        emailTextElement.innerText = "Email copied to clipboard!";
-
-        // After 10 seconds, revert back to the original email text
-        setTimeout(() => {
-            emailTextElement.innerText = originalEmailText;
-        }, 10000); // 10000 milliseconds = 10 seconds
-    }).catch(err => {
-        console.error("Failed to copy text: ", err);
-    });
-});
-
-window.addEventListener("DOMContentLoaded", function() {
-  const phoneLink = document.querySelector(".phone-link");
+  // Check if the user is on a mobile device using user agent detection
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-  // If the device is not a mobile device, remove the tel: link
+  // If the user is not on a mobile device (desktop or laptop)
   if (!isMobile) {
-    phoneLink.removeAttribute("href");
+    // 1. Remove the href attribute from the phone link to disable it on desktop
+    if (phoneLink) {
+      phoneLink.removeAttribute("href");
+    }
+
+    // 2. Handle click event on the email text to copy email to clipboard
+    if (emailTextElement) {
+      const originalEmailText = emailTextElement.innerText; // Store original email text
+
+      emailTextElement.addEventListener("click", function () {
+        // Copy the email text to the clipboard
+        navigator.clipboard.writeText(originalEmailText).then(() => {
+          // Replace the email text with feedback message
+          emailTextElement.innerText = "Email copied to clipboard!";
+
+          // Restore original email text after 10 seconds
+          setTimeout(() => {
+            emailTextElement.innerText = originalEmailText;
+          }, 10000); // 10 seconds
+        }).catch(err => {
+          console.error("Failed to copy text: ", err);
+        });
+      });
+    }
+  } else {
+    // If the user is on a mobile device
+
+    // 1. Add `tel:` link to the phone number (if not already present)
+    if (phoneLink && !phoneLink.href.includes("tel:")) {
+      phoneLink.setAttribute("href", "tel:+17133643754");
+    }
+
+    // 2. Change the behavior of the email element to use `mailto:`
+    if (emailTextElement) {
+      const emailAddress = "sales@informatica59.com";
+      emailTextElement.style.textDecoration = "underline"; // Ensure it looks clickable
+      emailTextElement.style.color = "#0b5394"; // Set appropriate color
+
+      // Make it behave like a link using `mailto:`
+      emailTextElement.addEventListener("click", function () {
+        window.location.href = `mailto:${emailAddress}`;
+      });
+    }
   }
 });
-
 
   </script>
 </body>
