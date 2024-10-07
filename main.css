@@ -174,6 +174,15 @@ body {
     font-weight: 500;
     line-height: 1.4;
   }
+         .transparent_header {
+        position: relative;
+        z-index: 10;
+    }
+
+    /* Ensure this is included for the collapsible navbar */
+    .navbar-collapse {
+        transition: background-color 0.3s ease; /* Smooth transition */
+    }
   
   /* Footer Text */
   footer {
@@ -379,6 +388,7 @@ button {
   background: transparent;
   position: relative;
   z-index: 10;
+  transition: background-color 0.3s ease;
 }
 
 .image-container {
