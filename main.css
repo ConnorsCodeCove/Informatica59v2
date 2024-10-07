@@ -424,7 +424,7 @@ button {
   width: 100%;
   height: 100%;
   background: radial-gradient(138.06% 1036.51% at 95.25% -2.54%, #4093ff 5.06%, #5e92fb 30.02%, #4D78EF 59.09%);; /* Blue overlay with 30% opacity */
-  opacity: 0.3;
+  opacity: 0.1;
   z-index: 1;
 }
 
@@ -567,7 +567,7 @@ button {
     position: fixed;
     bottom: 5%;
     right: 5%;
-    z-index: 1000;
+    z-index: 600;
     transition: transform 0.3s, opacity 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   }
@@ -619,10 +619,9 @@ button {
   border-radius: 10px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 1000;
-  max-height: 90vh;
+  max-height: 95vh;
   opacity: 0;
   transition: opacity 4s ease-in-out, transform 10s ease-in-out;
-  max-width: 950px;
 }
 
 .overlay-bg.show, .overlay-form.show {
@@ -734,10 +733,6 @@ button {
 
   @media (max-width: 576px) {
    /* Global Text Settings */
-   
-   .overlay-form {
-    max-width: 530px;
-  }
 
    #logoimg {
     width:230px; 
@@ -796,19 +791,15 @@ button {
 
   @media (max-width: 768px) {
   
-    .nav-item {
+    .headernav {
       display:flex;
       flex-direction:column;
       justify-content:end;
       align-items:end;
       padding-right: 10px;
     }
-    .nav-link {
+    .headernavlink {
       padding-right:10px;
-    }
-
-    .overlay-form {
-      max-width: 730px;
     }
   }
 
@@ -819,8 +810,26 @@ button {
   }
 
 
-  @media (max-width: 380px) {
+  @media (min-width: 375px) {
     .overlay-form {
       max-width: 375px;
+    }
+  }
+
+  @media (min-width: 576px) {
+    .overlay-form {
+      max-width: 400px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .overlay-form {
+      max-width: 450px;
+    }
+  }
+
+  @media (min-width: 992px) {
+    .overlay-form {
+      max-width: 800px;
     }
   }

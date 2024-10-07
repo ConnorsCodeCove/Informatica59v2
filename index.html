@@ -19,7 +19,7 @@
 <body>
   <header class="transparent_header">
     <div class="container">
-      <nav class="navbar navbar-expand-md border-bottom py-3 px-0">
+      <nav class="navbar navbar-expand-md border-bottom py-3 px-0 headernav">
         <div class="container-fluid d-flex" style="padding-left:6px; padding-right:6px;">
           <a class="navbar-brand" href="#" style="padding: 0;">
             <img src="./assets/colorlogobanner.svg" id="logoimg">
@@ -33,14 +33,14 @@
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarsExample03">
           <ul class="navbar-nav nav-pills my-0">
-            <li class="nav-item">
-              <a class="nav-link active homenav text-white" aria-current="page" href="#">Home</a>
+            <li class="nav-item headernav">
+              <a class="nav-link active homenav text-white headernavlink" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link homenav text-white" href="#">Pricing</a>
+            <li class="nav-item headernav">
+              <a class="nav-link homenav text-white headernavlink" href="#">Pricing</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link homenav dropdown-toggle text-white" href="#" data-bs-toggle="dropdown"
+            <li class="nav-item headernav dropdown">
+              <a class="nav-link homenav dropdown-toggle text-white headernavlink" href="#" data-bs-toggle="dropdown"
                 aria-expanded="false">Services</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -48,8 +48,8 @@
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link homenav standout" href="#" style="color: #0b5394 !important">Contact</a>
+            <li class="nav-item headernav">
+              <a class="nav-link homenav standout headernavlink" href="#" style="color: #0b5394 !important">Contact</a>
             </li>
           </ul>
         </div>
@@ -59,17 +59,17 @@
   <main>
     <div id="overlayBg" class="overlay-bg"></div>
     <section class="px-3 px-md-5 pt-5 pb-0 pb-md-3 rotating-background" id="hero">
-      <div id="overlayForm" class="overlay-form container p-md-5 p-3" style="padding-bottom: 0;">
+      <div id="overlayForm" class="overlay-form container p-lg-5 p-3" style="padding-bottom: 0;">
         <h5 class="text-left" style="margin-bottom:0;">Customer Interest Form</h5>
-        <p class="small">Want to ask us a question or work together? Send us a message and we will get back with you as
+        <p class="small">Want to ask us a question? Send us a message and we will get back with you as
           soon as we can.</p>
         <form id="contactForm"
           action="https://docs.google.com/forms/d/e/1FAIpQLSfAXa2arcf2erg72cfmIcnHu0sAyO2vmWeJ3l7BPcYS3QvxvQ/formResponse"
           method="POST">
           <div class="row">
-            <div class="mb-1 col">
+            <div class="mb-md-1 mb-0 col">
               <label for="firstname" class="label">First Name</label>
-              <input type="text" class="form-control" id="firstname" name="entry.1495914017" placeholder="First name"
+              <input type="text" class="form-control mb-0" id="firstname" name="entry.1495914017" placeholder="First name"
                 required>
             </div>
 
@@ -110,11 +110,11 @@
               placeholder="Type your message...">
           </div>
           <div class="text-center py-1 py-md-3">
-            <button type="submit" class="btn btn-success">Submit</button>
-            <button type="button" id="closeFormBtn" class="btn btn-danger">Close</button>
+            <button type="submit" class="btn" style="background:#d9c479;">Submit</button>
+            <button type="button" id="closeFormBtn" class="btn" style="background:#0b549438;">Close</button>
           </div>
           <div>
-            <p class="text-left pt-md-3" style="font-size: 12px;">Informatica59 needs the information on this form to
+            <p class="text-left pt-3" style="font-size: 10px;">We need the information on this form to
               contact you. To know how we commit to protecting your privacy, please review our Privacy Policy.</p>
           </div>
         </form>
@@ -152,7 +152,7 @@
                     color: transparent;">Concentrate on your <span style="color: #c9af50;">success</span>; we'll take
             care of the <span style="color:#2e92ea;">tech</span>.</h2>
           <p class="text-left text-lg-center lead text-white">At
-            <span style="font-weight:500;color:#d9c479; animation: soft-glow 4s infinite;">Informatica59</span>, we
+            <span style="font-weight:500;color:#d9c479; animation: soft-glow 7s infinite;">Informatica59</span>, we
             deliver
             tailored solutions that empower your organization to
             thrive. We take a concierge-like approach as your Managed Service Provider (MSP).
@@ -170,7 +170,7 @@
               <div class="row">
                 <div class="col-lg-6 mb-4 mb-md-0">
                   <div class="container pb-1 pe-0 pe-md-3">
-                    <h3 class="pb-4 p-md-3" style="color:#0b5394; text-shadow:0 0 0px #0b5394;">From Cloud to On-Site IT
+                    <h3 class="pb-4 p-md-3" style="color:#0b5394; ">From Cloud to On-Site IT
                       Solutions</h3>
                     <!-- Section 1 -->
                     <div class="container">
@@ -186,7 +186,7 @@
 
                         </div>
                         <div class="col pe-0 pe-md-3">
-                          <h6 style="color:#0b5394; text-shadow:0 0 0px #0b5394;">Keep your systems running smoothly
+                          <h6 style="color:#0b5394; ">Keep your systems running smoothly
                           </h6>
                           <p class="subtle">We keep an eye on your IT environment, resolving issues before they become
                             major problems.</p>
@@ -204,7 +204,7 @@
                           </svg>
                         </div>
                         <div class="col pe-0 pe-md-3">
-                          <h6 style="color:#0b5394; text-shadow:0 0 0px #0b5394;">Scalable Solutions for Growing
+                          <h6 style="color:#0b5394; ">Scalable Solutions for Growing
                             Businesses</h6>
                           <p class="subtle">Affordable and scalable IT services, without the need for in-house
                             expertise.</p>
@@ -223,7 +223,7 @@
                           </svg>
                         </div>
                         <div class="col pe-0 pe-md-3">
-                          <h6 style="color:#0b5394; text-shadow:0 0 0px #0b5394;">Straightforward Pricing</h6>
+                          <h6 style="color:#0b5394; ">Straightforward Pricing</h6>
                           <p class="subtle">Simplify your IT with a single provider and no
                             hidden costs. </p>
                         </div>
@@ -274,24 +274,23 @@
           <!-- About image START -->
           <div class="col-lg-7 mt-5 mt-lg-0">
             <div class="row">
-              <div class="col-sm-6">
-                <!-- About image -->
-                <img src="assets/02.jpg" loading="lazy" class="rounded img-fluid appear" alt="about-img">
-                <div class="d-block d-md-none mt-4"></div>
+              <div class="col-sm-6 mb-4">
+                <img src="assets/pexels-tracehudson-10893475.webp" loading="lazy" class="rounded-3 img-fluid appear shadow"
+                  alt="a beautiful picture of Houston Downtown">
               </div>
 
               <div class="col-sm-6">
                 <!-- Skill set -->
                 <div class="row mb-4">
                   <div class="col-6 mb-md-4 mb-sm-0">
-                    <div class="text-white rounded text-center p-3 appear h-100" style="background:#0b5394">
+                    <div class="text-white rounded text-center p-3 appear h-100 shadow" style="background:#0b5394">
                       <h4><span class="text-white" id="number2" style="line-height:1;">20</span><span
                           class="text-white">+</span></h4>
                       <h5 class="mb-0 fw-semibold" style="line-height:1;">Years expertise</h5>
                     </div>
                   </div>
                   <div class="col-6 mb-md-4 mb-sm-0">
-                    <div class="rounded text-center p-3 appear h-100" style="background: radial-gradient(138.06% 1036.51% at 95.25% -2.54%, 
+                    <div class="rounded text-center p-3 appear h-100 shadow" style="background: radial-gradient(138.06% 1036.51% at 95.25% -2.54%, 
                       #e2c580 5.06%,  /* Highlight */
                       #c9af50 51.02%,  /* Primary Color */
                       #b28b37 79.09%,  /* Accent */
@@ -304,10 +303,7 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- About image -->
-                <img src="assets/pexels-tracehudson-10893475.webp" loading="lazy" class="rounded-3 img-fluid appear"
-                  alt="about-img-2">
+                <iframe class="w-100 shadow" height="400" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d443088.05180108926!2d-95.7309462760377!3d29.81736468590139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1728315122494!5m2!1sen!2sus&maptype=satellite&controls=0&style=feature:poi|visibility:off" style="border-radius:0.375em;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div> <!-- Row END -->
           </div>
@@ -423,7 +419,7 @@
       <div class="container col p-3 p-md-5 page-padding appear">
         <h2 class="text-center pb-3" style="font-weight: bold;">How We Do Business</h2>
         <p class="pb-3 text-left text-lg-center lead" style="max-width: 1000px; margin: 0 auto;">
-          At our firm, client success is not just a goal; it's our unwavering focus. We do business simply and fairly
+          At our firm, <span class="emphasis" style="font-weight:800;">client success is not just a goal; it's our unwavering focus</span>. We do business simply and fairly
           with no hidden fees or material markups. Elevate your business with a consulting partner that not only
           understands your needs but goes above and beyond to ensure your success.
         </p>
@@ -563,10 +559,10 @@
         <div class="row mb-4">
           <div class="card shadow-md rounded-4" style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
             <div class="card-body rounded-4 p-3 p-md-5 row"
-              style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+              style="background: linear-gradient(145deg, #c6d5e057, #ffffffab, #95b8e23f); overflow:hidden; padding:0;">
               <div class="container pt-3 pb-1 px-2 ps-md-4 pe-md-5 col-lg-7">
                 <h6 class="subtle pb-3">Step 1</h6>
-                <h3 class="pb-2">Initial Consultation</h3>
+                <h3 class="pb-2" style="color:#0b5394;">Initial Consultation</h3>
                 <p class="lead">Understand your business, goals, and current IT setup. Discuss pain points, challenges,
                   and opportunities. Determine how our services can address your needs.</p>
                 <br>
@@ -583,11 +579,11 @@
           <div class="card shadow-md rounded-4 appear h-100"
             style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
             <div class="card-body rounded-4 p-3 p-md-5 row"
-              style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+              style="background: linear-gradient(145deg, #c6d5e057, #ffffffab, #95b8e23f); overflow:hidden; padding:0;">
 
               <div class="container pt-3 pb-1 px-2 ps-md-4 pe-md-5 col-lg-7">
                 <h6 class="subtle pb-3">Step 2</h6>
-                <h3 class="pb-2">IT Assessment</h3>
+                <h3 class="pb-2" style="color:#0b5394;">IT Assessment</h3>
                 <p class="lead">Evaluate your entire IT environment. Review hardware, software, network, and security.
                   Identify inefficiencies, risk, and areas for improvement.</p>
                 <br>
@@ -604,11 +600,11 @@
           <div class="card shadow-md rounded-4 appear h-100"
             style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
             <div class="card-body rounded-4 p-3 p-md-5 row"
-              style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+              style="background: linear-gradient(145deg, #c6d5e057, #ffffffab, #95b8e23f); overflow:hidden; padding:0;">
 
               <div class="container pt-3 pb-1 px-2 ps-md-4 pe-md-5 col-lg-7">
                 <h6 class="subtle pb-3">Step 3</h6>
-                <h3 class="pb-2">Tailored Proposal</h3>
+                <h3 class="pb-2" style="color:#0b5394;">Tailored Proposal</h3>
                 <p class="lead">We'll design an IT solution for your business. Align proposed solutions with your
                   objectives. Review pricing. Prepare for Onboarding.</p>
                 <br>
@@ -625,11 +621,11 @@
           <div class="card shadow-md rounded-4 appear h-100"
             style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
             <div class="card-body rounded-4 p-3 p-md-5 row"
-              style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+              style="background: linear-gradient(145deg, #c6d5e057, #ffffffab, #95b8e23f); overflow:hidden; padding:0;">
 
               <div class="container pt-3 pb-1 px-2 ps-md-4 pe-md-5 col-lg-7">
                 <h6 class="subtle pb-3">Step 4</h6>
-                <h3 class="pb-2">Onboarding</h3>
+                <h3 class="pb-2" style="color:#0b5394;">Onboarding</h3>
                 <p class="lead">Seamless system transition. Implement new tools and processes with minimal disruption.
                   Ensure smooth adoption and system stability.</p>
                 <br>
@@ -646,11 +642,11 @@
           <div class="card shadow-md rounded-4 appear h-100"
             style="overflow: hidden; border: 1px solid rgba(0, 0, 0, 0.1);">
             <div class="card-body rounded-4 p-3 p-md-5 row"
-              style="background: linear-gradient(145deg, #f7f7f7, #ffffff); overflow:hidden; padding:0;">
+              style="background: linear-gradient(145deg, #c6d5e057, #ffffffab, #95b8e23f); overflow:hidden; padding:0;">
 
               <div class="container pt-3 pb-1 px-2 ps-md-4 pe-md-5 col-lg-7">
                 <h6 class="subtle pb-3">Step 5</h6>
-                <h3 class="pb-2">Continuous Support and Improvement</h3>
+                <h3 class="pb-2" style="color:#0b5394;">Continuous Support and Improvement</h3>
                 <p class="lead">Maintain performance and support growth. Provide ongoing support, monitoring, and
                   regular reviews. Keep your IT infrastructure aligned with business needs.</p>
                 <br>
@@ -753,7 +749,7 @@
   </section>
   <footer class="pt-5 pb-3" style="background:#0b5394">
     <ul class="nav nav-pills justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link homenav active px-2">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link homenav active px-md-2">Home</a></li>
       <li class="nav-item"><a href="#" class="nav-link homenav px-2 text-white">Pricing</a></li>
       <li class="nav-item"><a href="#" class="nav-link homenav px-2 text-white">FAQs</a></li>
       <li class="nav-item"><a href="#" class="nav-link homenav standout px-2">Contact</a></li>
