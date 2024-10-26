@@ -927,29 +927,39 @@
     });
   </script>
   <script>
-    // Array of background image URLs
-    const images = [
-      'url("assets/header1.webp")',
-      'url("assets/header2.webp")',
-      'url("assets/header3.webp")'
-    ];
+// Array of background image URLs
+const images = [
+  'assets/header1.webp',
+  'assets/header2.webp',
+  'assets/header3.webp'
+];
 
-    let currentIndex = 0;
-    const backgroundDiv = document.querySelector('.rotating-background');
+const backgroundDiv = document.querySelector('.rotating-background');
 
-    // Function to change the background image
-    function changeBackground() {
-      // Update the background image to the next one in the array
-      backgroundDiv.style.backgroundImage = images[currentIndex];
-      // Increment the index to point to the next image
-      currentIndex = (currentIndex + 1) % images.length;
-    }
+// Add image layers
+images.forEach((imageSrc, index) => {
+  const layer = document.createElement('div');
+  layer.classList.add('background-layer');
+  layer.style.backgroundImage = `url(${imageSrc})`;
+  if (index === 0) layer.classList.add('active');
+  backgroundDiv.appendChild(layer);
+});
 
-    // Initial background image
-    changeBackground();
+let currentIndex = 0;
+const layers = document.querySelectorAll('.background-layer');
 
-    // Change background image every 5 seconds
-    setInterval(changeBackground, 5000);
+function changeBackground() {
+  // Remove 'active' from current layer
+  layers[currentIndex].classList.remove('active');
+
+  // Move to next layer and add 'active' class
+  currentIndex = (currentIndex + 1) % layers.length;
+  layers[currentIndex].classList.add('active');
+}
+
+// Change background image every 5 seconds
+setInterval(changeBackground, 5000);
+
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
