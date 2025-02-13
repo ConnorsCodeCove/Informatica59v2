@@ -550,7 +550,7 @@ button {
   .homenav {
     background: rgba(255,255,255,0.0);
     transition: background-color 0.3s ease, color 0.3s ease;
-    max-width: 100px;
+    max-width: 120px;
     color:white;
     padding-left: 8px !important;
     margin-left:15px;
